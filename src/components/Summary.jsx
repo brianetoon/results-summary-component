@@ -1,0 +1,28 @@
+import React from 'react';
+import SummaryItem from './SummaryItem';
+
+const Summary = () => {
+
+  const summaryItems = [
+    { title: "Reaction", icon: "icon-reaction.svg", score: 80, type: "accent-1" },
+    { title: "Memory", icon: "icon-memory.svg", score: 92, type: "accent-2" },
+    { title: "Verbal", icon: "icon-verbal.svg", score: 61, type: "accent-3" },
+    { title: "Visual", icon: "icon-visual.svg", score: 72, type: "accent-4" },
+  ]
+
+  return (
+    <div className="summary flow" data-spacing="large">
+      <h2 className="section-title">Summary</h2>
+      
+      <ul className="flow">
+        {summaryItems.map(item => (
+          <SummaryItem item={item} key={item.title} />
+        ))}
+      </ul>
+
+      <button className="button">Continue</button>
+    </div>
+  );
+}
+
+export default Summary;
