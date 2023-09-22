@@ -1,0 +1,16 @@
+@use "../abstracts/" as *;
+
+.results-summary {
+  --grid-gap: 0;
+  --border-radius: #{size('32')};
+  --container-padding: 0rem;
+
+  @include container(45rem, var(--container-padding));
+
+  @include mq(small) {
+    --container-padding: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: .5rem 1rem 3rem 
+      rgba(clr(neutral, '700'), 0.2);
+  }
+}

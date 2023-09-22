@@ -1,0 +1,15 @@
+@use "../abstracts/" as *;
+
+.results {
+  color: rgba(clr(neutral, '100'), 0.70);
+  padding: var(--padding);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+
+  @include linear-gradient(
+    180deg, clr(primary, '400'), clr(secondary, '400')
+  );
+
+  @include mq(small) {
+    border-radius: var(--border-radius);
+  }
+}

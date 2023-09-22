@@ -1,0 +1,20 @@
+@use "sass:map";
+@use "../abstracts/" as *;
+
+@each $key, $value in map.get($colors, accent) {
+  .summary-item[data-item-type="accent-#{$key}"] {
+    padding: size('16');
+    border-radius: size('8');
+    background-color: rgba($value, 0.1);
+    display: flex;
+    justify-content: space-between;
+
+    & .summary-item-title {
+      color: $value;
+    }
+
+    & .summary-score {
+      color: rgba(clr(neutral, '700'), 0.5);
+    }
+  }
+}

@@ -2,7 +2,7 @@ import React from 'react';
 
 const SummaryItem = ({ item }) => {
   return (
-    <li className="summary-item" data-item-type={item.type}>
+    <li className="summary-item | fw-bold" data-item-type={item.type}>
 
       <div className="flex-group">
         <img className="summary-icon" src={`icons/${item.icon}`} />
@@ -12,7 +12,7 @@ const SummaryItem = ({ item }) => {
       </div>
 
       <p className="summary-score">
-        <span>{ item.score }</span> / 100
+        <span className="clr-neutral-700">{ item.score }</span> / 100
       </p>
 
     </li>

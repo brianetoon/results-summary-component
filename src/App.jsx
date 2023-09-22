@@ -1,14 +1,10 @@
-// import './App.css'
-import Results from "./components/Results";
-import Summary from "./components/Summary";
+import './sass/main.scss';
+import ResultsSummary from './components/ResultsSummary';
 
 function App() {
   return (
     <main>
-      <div className="results-summary">
-        <Results />
-        <Summary />
-      </div>
+      <ResultsSummary />
     </main>
   )
 }

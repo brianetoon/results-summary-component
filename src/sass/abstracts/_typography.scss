@@ -1,0 +1,18 @@
+$ff-sans: 'HankenGrotesk', system-ui, sans-serif;
+$ff-serif: serif;
+
+$ff-base: $ff-sans;
+$ff-accent: $ff-serif;
+
+$font-sizes: (
+  '400': 1.125rem,
+  '500': 1.25rem,
+  '600': 1.5rem,
+  '700': 1.75rem,
+  '800': 2rem,
+  '900': 4rem,
+);
+
+$fw-500: 500;
+$fw-700: 700;
+$fw-800: 800;

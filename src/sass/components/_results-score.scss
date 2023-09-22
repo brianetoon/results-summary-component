@@ -1,0 +1,22 @@
+@use "../abstracts/" as *;
+
+.results-score {
+  display: grid;
+  place-content: center;
+  width: 12rem;
+  margin-inline: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  
+  @include linear-gradient (
+    180deg, clr(primary, '500'), clr(secondary, '500')
+  );
+}
+
+.results-score span {
+  display: block;
+  font-size: fs('900');
+  font-weight: $fw-800;
+  line-height: 1;
+  color: clr(neutral, '100');
+}

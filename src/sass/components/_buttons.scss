@@ -1,0 +1,25 @@
+@use "../abstracts" as *;
+
+.button {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1;
+  border: 0;
+  font-weight: $fw-700;
+  padding: 1.125rem 2rem;
+  transition: 275ms ease;
+  border-radius: 100vw;
+
+  &[data-type="primary"] {
+    background-color: clr(neutral, '700');
+    color: clr(neutral, '100');
+
+    &:is(:hover, :focus) {
+      @include linear-gradient(
+        180deg, clr(primary, '400'), clr(secondary, '400')
+      );
+    }
+  }
+}

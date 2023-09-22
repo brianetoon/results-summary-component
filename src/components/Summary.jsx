@@ -11,8 +11,8 @@ const Summary = () => {
   ]
 
   return (
-    <div className="summary flow" data-spacing="large">
-      <h2 className="section-title">Summary</h2>
+    <div className="summary | padding-40 flow" data-spacing="large">
+      <h2 className="section-title | fs-600 fw-bold">Summary</h2>
       
       <ul className="flow">
         {summaryItems.map(item => (
@@ -20,7 +20,9 @@ const Summary = () => {
         ))}
       </ul>
 
-      <button className="button">Continue</button>
+      <button className="button | width-100" data-type="primary">
+        Continue
+      </button>
     </div>
   );
 }

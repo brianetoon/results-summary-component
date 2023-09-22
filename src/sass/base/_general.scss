@@ -1,0 +1,19 @@
+@use "../abstracts/" as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $ff-base;
+  font-weight: $fw-500;
+  font-size: fs('400');
+  color: clr(neutral, '700');
+  line-height: 1.5;
+
+  @include mq(small) {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+}
