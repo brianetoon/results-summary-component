@@ -4,10 +4,10 @@ import SummaryItem from './SummaryItem';
 const Summary = () => {
 
   const summaryItems = [
-    { title: "Reaction", icon: "icon-reaction.svg", score: 80, type: "accent-1" },
-    { title: "Memory", icon: "icon-memory.svg", score: 92, type: "accent-2" },
-    { title: "Verbal", icon: "icon-verbal.svg", score: 61, type: "accent-3" },
-    { title: "Visual", icon: "icon-visual.svg", score: 72, type: "accent-4" },
+    { title: "Reaction", icon: "icon-reaction.svg", score: 80, type: "accent-1", id: 1 },
+    { title: "Memory", icon: "icon-memory.svg", score: 92, type: "accent-2", id: 2 },
+    { title: "Verbal", icon: "icon-verbal.svg", score: 61, type: "accent-3", id: 3 },
+    { title: "Visual", icon: "icon-visual.svg", score: 72, type: "accent-4", id: 4 },
   ]
 
   return (
@@ -16,7 +16,7 @@ const Summary = () => {
       
       <ul className="flow">
         {summaryItems.map(item => (
-          <SummaryItem item={item} key={item.title} />
+          <SummaryItem item={item} key={item.id} />
         ))}
       </ul>
 

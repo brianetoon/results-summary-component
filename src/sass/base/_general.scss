@@ -11,6 +11,7 @@ body {
   color: clr(neutral, '700');
   line-height: 1.5;
 
+  // for demo only
   @include mq(small) {
     min-height: 100vh;
     display: grid;

@@ -4,7 +4,6 @@ import Summary from './Summary';
 
 const ResultsSummary = () => {
   return (
-    // <div className="results-summary | container even-columns" data-type="narrow">
     <div className="results-summary | even-columns">
       <Results />
       <Summary />
